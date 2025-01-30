@@ -31,10 +31,10 @@ public class Task {
 
     public Task() {
     }
-    public Task(String title, String description, LocalDate dueDate, TaskStatus status) {
+    public Task(String id, String title, String description, LocalDate dueDate, TaskStatus status) {
         // I did not use id because the database auto-generates an id//
         // id is important for creating new tasks
-
+        this.id=id;
         this.title=title;
         this.description=description;
         this.dueDate=dueDate;
